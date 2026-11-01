@@ -8,12 +8,10 @@ public class Q1078 {
 
         Scanner input = new Scanner(System.in);
 
-
         // Recebe dado do usuário
 
         System.out.print("Informe um número: ");
         int num = input.nextInt();
-
 
         // Fecha a classe Scanner
 

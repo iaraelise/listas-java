@@ -9,7 +9,7 @@ public class Q01 {
 
         int[] numeros = new int[10];
 
-        // Declara o contador de númros pares
+        // Declara o contador de números pares
 
         int contador = 0;
 
@@ -18,6 +18,9 @@ public class Q01 {
         for(int i = 0; i < numeros.length; i++) {
 
             numeros[i] = input.nextInt();
+
+            /* A condição verifica se o número na posição i é múltiplo de 2 e diferente de 0.
+               Se a condição for verdadeira, o contador soma +1. */
 
             if(numeros[i] % 2 == 0 && numeros[i] != 0) {
                 contador++;

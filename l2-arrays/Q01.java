@@ -24,6 +24,8 @@ public class Q01 {
             }
         }
 
+        input.close();
+
         System.out.print("Quantidade de números par: " + contador);
     }
 }

@@ -38,10 +38,10 @@ public class Q03 {
 
         input.close();
 
-        /* FOR 3 - Percorre lista3 e verifica, através de uma condicional se a posição k é par.
+        /* FOR 3 - Percorre lista3 e verifica, através de uma condicional se a posição k é par
 
-           Se for verdadeiro, lista3[k] recebe o valor armazenado na posição par da lista1
-           Se for falso, lista[k] recebe o valor armazenado na posição impar da lista2
+           Se for verdadeiro, lista3[k] recebe o valor armazenado no índice k / 2 da lista1
+           Se for falso, lista[k] recebe o valor armazenado no índice k / 2 da lista2
         
         */
 

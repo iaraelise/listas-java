@@ -5,7 +5,7 @@ public class Q06 {
         
         Scanner input = new Scanner(System.in);
 
-        int somadorImpar = 0;
+        int somador = 0;
 
         System.out.println("Informe uma determinada quantidade de números:");
 
@@ -30,9 +30,9 @@ public class Q06 {
 
             numerosConvertidos[i] = Integer.parseInt(listaNumeros[i]);
 
-            if(numerosConvertidos[i] % 2 != 0) {
+            if(i % 2 != 0) {
 
-                somadorImpar += numerosConvertidos[i];
+                somador += numerosConvertidos[i];
             }
         }
 

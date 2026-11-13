@@ -32,6 +32,9 @@ public class Q06 {
 
             numerosConvertidos[i] = Integer.parseInt(listaNumeros[i]);
 
+            /* A primeira condicional verifica se o índice i é ímpar. Caso a condição seja verdadeira,
+               o valor armazenado em numerosConvertidos[i] é adicionado à variável somador. */
+
             if(i % 2 != 0) {
                 somador += numerosConvertidos[i];
 

@@ -26,17 +26,28 @@ public class Q06 {
         /* O laço percorre o array numerosConvertidos e, a cada repetição, o método Integer.parseInt()
            converte o elemento na posição i de String para int. */
 
+        boolean primeiroNumero = true;
+
         for(int i = 0; i < numerosConvertidos.length; i++) {
 
             numerosConvertidos[i] = Integer.parseInt(listaNumeros[i]);
 
             if(i % 2 != 0) {
-
                 somador += numerosConvertidos[i];
+
+                /* A segunda condicional verifica se o número atual é o primeiro a ser impresso. Caso não seja,
+                   o sinal de + é impresso antes do número. */
+
+                if(primeiroNumero == true) {
+                    System.out.print(numerosConvertidos[i]);
+
+                    primeiroNumero = false;
+                }
+                else {
+                    System.out.print(" + " + numerosConvertidos[i]);
+                }
             }
         }
-
-        System.out.println();
-
+        System.out.print(" = " + somador);
     }
 }

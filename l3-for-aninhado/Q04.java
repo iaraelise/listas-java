@@ -5,8 +5,7 @@ public class Q04 {
 
         for(char letra = 'A'; letra <= 'D'; letra++) {
 
-            /* O laço interno percorre os números de 1 a 3, combinando cada número com a letra selecionada
-            pelo laço externo. */
+            /* O laço interno percorre os números de 1 a 3 e combina cada número com a letra selecionada pelo laço externo. */
 
             for(int i = 1; i <= 3; i++) {
 

@@ -11,15 +11,13 @@ public class Q09 {
 
         input.close();
 
-        /* O laço externo percorre os números de 1 até num,
-        e seleciona cada número que terá seus divisores identificados. */
+        // O laço externo percorre os números de 1 até num e seleciona cada número que terá seus divisores identificados.
 
         for(int i = 1; i <= num; i++) {
 
             boolean primeiroDivisor = true;
 
-            /* O laço interno percorre os possíveis divisores de i,
-            verificando cada valor de 1 até o próprio número. */
+            // O laço interno percorre os possíveis divisores de i e verifica cada valor de 1 até o próprio número.
 
             for(int j = 1; j <= i; j++) {
 

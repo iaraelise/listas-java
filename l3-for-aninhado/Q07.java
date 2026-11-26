@@ -5,7 +5,7 @@ public class Q07 {
         
         Scanner input = new Scanner(System.in);
 
-        /* O laço externo controla a quantidade de alunos que terão suas notas verificadas pelo programa. */
+        // O laço externo controla a quantidade de alunos que terão suas notas verificadas pelo programa.
 
         for(int i = 1; i <= 5; i++) {
 
@@ -13,7 +13,8 @@ public class Q07 {
             
             System.out.println("Informe as notas do " + i + "° aluno:");
 
-            /* O laço interno controla a quantidade de notas informadas pelo usuário e acumula seus valores na variável somadorNota. */
+            /* O laço interno controla a quantidade de notas informadas pelo usuário
+            e acumula os valores na variável somadorNota. */
 
             for(int j = 1; j <= 3; j++) {
 
@@ -23,7 +24,7 @@ public class Q07 {
             }
 
             /* A variável media armazena o resultado do cálculo da média das notas informadas pelo usuário.
-               O método printf() exibe esse resultado formatado com uma casa decimal. */
+            O método printf() exibe esse resultado formatado com uma casa decimal. */
 
             double media = somador / 3.0;
 

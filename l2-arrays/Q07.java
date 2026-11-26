@@ -19,7 +19,7 @@ public class Q07 {
 
         // 1° laço percorre o array e remove os pontos e as vírgulas de cada palavra.
 
-        for (int i = 0; i < palavra.length; i++) {
+        for(int i = 0; i < palavra.length; i++) {
 
             palavra[i] = palavra[i].replace(".", "");
             palavra[i] = palavra[i].replace(",", "");
@@ -27,7 +27,7 @@ public class Q07 {
 
         // 2° laço seleciona cada palavra do array para verificar suas ocorrências.
 
-        for (int j = 0; j < palavra.length; j++) {
+        for(int j = 0; j < palavra.length; j++) {
 
             boolean palavraContabilizada = false;
 
@@ -39,25 +39,29 @@ public class Q07 {
                já apareceu em uma posição anterior. Caso contrário, a segunda condicional verifica se
                as palavras são iguais e incrementa a variável contador. */
 
-            for (int k = 0; k < palavra.length; k++) {
-
+            for(int k = 0; k < palavra.length; k++) {
+                
                 if (k < j && palavra[j].equals(palavra[k])) {
+
                     palavraContabilizada = true;
                 }
 
                 if (palavra[j].equals(palavra[k])) {
+                    
                     contador++;
                 }
             }
 
             // Imprime somente as palavras que ainda não foram contabilizadas.
 
-            if (!palavraContabilizada) {
+            if(!palavraContabilizada) {
+
                 System.out.print(palavra[j] + " = " + contador);
 
                 // Evita imprimir o ponto e vírgula após a última palavra.
 
-                if (j < palavra.length - 1) {
+                if(j < palavra.length - 1) {
+
                     System.out.print("; ");
                 }
             }

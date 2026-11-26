@@ -9,13 +9,13 @@ public class Q05 {
 
         int qtdNumeros = input.nextInt();
 
-        // Declara o tamanho do array com base na entrada do usuário
+        // Declara o tamanho do array com base na entrada do usuário.
 
         int[] listaNumeros = new int[qtdNumeros];
 
         System.out.println("Informe " + qtdNumeros + " números: ");
 
-        // O laço percorre listaNumeros e o preenche com os valores informados pelo usuário
+        // O 1° laço percorre listaNumeros e o preenche com os valores informados pelo usuário.
 
         for(int i = 0; i < listaNumeros.length; i++) {
 
@@ -28,7 +28,7 @@ public class Q05 {
 
         String letras = input.next();
 
-        // O while garante que a String informada pelo usuário possua o mesmo tamanho do array
+        // O while garante que a String informada pelo usuário possua o mesmo tamanho do array.
 
         while(letras.length() != listaNumeros.length) {
 
@@ -37,12 +37,9 @@ public class Q05 {
             letras = input.next();
         }
 
-        /* O laço percorre listaNumeros e a condicional verifica se a posição j é par
-
-           Se for verdadeiro, o programa imprime o valor em listaNumeros[j]
-           Se for falso, o programa imprime o caractere na posição j da String informada pelo usuário
-        
-        */
+        /* O 2° laço percorre listaNumeros e a condicional verifica se a posição j é par.
+        Se for verdadeiro, o programa imprime o valor em listaNumeros[j].
+        Se for falso, o programa imprime o caractere na posição j da String informada pelo usuário. */
 
         for(int j = 0; j < listaNumeros.length; j++) {
 

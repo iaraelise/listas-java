@@ -9,16 +9,16 @@ public class Q03 {
 
         int tamanhoListas = input.nextInt();
 
-        // Declara o tamanho do array com base na entrada do usuário
+        // Declara o tamanho do array com base na entrada do usuário.
 
         int[] lista1 = new int[tamanhoListas];
         int[] lista2 = new int[tamanhoListas];
 
-        // Cria uma terceira lista e multiplica tamanhoListas por 2, porque o tamanho de lista3 precisa ser o dobro de tamanhoLista
+        // Cria uma terceira lista e multiplica tamanhoListas por 2, porque o tamanho de lista3 precisa ser o dobro de tamanhoLista.
 
         int[] lista3 = new int[tamanhoListas * 2];
 
-        // FOR 1 - Preenche lista1 com os valores informados pelo usuário
+        // O 1° laço preenche lista1 com os valores informados pelo usuário.
 
         System.out.println("Informe os valores da lista 1:");
 
@@ -27,7 +27,7 @@ public class Q03 {
             lista1[i] = input.nextInt();
         }
 
-        // FOR 2 - Preenche lista2 com os valores informados pelo usuário
+        // O 2° laço preenche lista2 com os valores informados pelo usuário.
 
         System.out.println("Informe os valores da lista 2:");
 
@@ -38,12 +38,9 @@ public class Q03 {
 
         input.close();
 
-        /* FOR 3 - Percorre lista3 e verifica, através de uma condicional se a posição k é par
-
-           Se for verdadeiro, lista3[k] recebe o valor armazenado no índice k / 2 da lista1
-           Se for falso, lista[k] recebe o valor armazenado no índice k / 2 da lista2
-        
-        */
+        /* O 3° laço percorre lista3 e verifica, através de uma condicional se a posição k é par.
+        Se for verdadeiro, lista3[k] recebe o valor armazenado no índice k / 2 da lista1.
+        Se for falso, lista[k] recebe o valor armazenado no índice k / 2 da lista2. */
 
         for (int k = 0; k < lista3.length; k++) {
 
@@ -57,7 +54,7 @@ public class Q03 {
             }
         }
 
-        // FOR 4 - Imprime na tela do usuário os valores armazenados na lista3
+        // O 4° laço imprime na tela do usuário os valores armazenados na lista3.
 
         for(int l = 0; l < lista3.length; l++) {
             System.out.println(lista3[l]);

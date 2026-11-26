@@ -9,8 +9,6 @@ public class Q01 {
 
         int[] numeros = new int[10];
 
-        // Declara o contador de números pares
-
         int contador = 0;
 
         System.out.println("Informe 10 números:");

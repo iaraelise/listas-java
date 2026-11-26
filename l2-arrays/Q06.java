@@ -36,14 +36,15 @@ public class Q06 {
                o valor armazenado em numerosConvertidos[i] é adicionado à variável somador. */
 
             if(i % 2 != 0) {
+                
                 somador += numerosConvertidos[i];
 
                 /* A segunda condicional verifica se o número atual é o primeiro a ser impresso. Caso não seja,
                    o sinal de + é impresso antes do número. */
 
                 if(primeiroNumero == true) {
-                    System.out.print(numerosConvertidos[i]);
 
+                    System.out.print(numerosConvertidos[i]);
                     primeiroNumero = false;
                 }
                 else {

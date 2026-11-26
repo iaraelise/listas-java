@@ -9,51 +9,41 @@ public class Q02 {
 
         int numero = input.nextInt();
 
-        // Declara o tamanho do array com base na entrada do usuário
+        // Declara o tamanho do array com base na entrada do usuário.
 
         int[] lista1 = new int[numero];
         int[] lista2 = new int[numero];
 
-        // Declara somadores pares
-
         int somadorParL1 = 0;
         int somadorParL2 = 0;
-
-        // Declara somadores ímpares
-
         int somadorImparL1 = 0;
         int somadorImparL2 = 0;
 
-        // FOR 1 - Preenche lista1 com os valores informados pelo usuário
+        // FOR 1 - Preenche lista1 com os valores informados pelo usuário.
 
         System.out.println("Informe os valores da lista 1:");
 
-        for (int i = 0; i < lista1.length; i++) {
+        for(int i = 0; i < lista1.length; i++) {
 
             lista1[i] = input.nextInt();
         }
 
-        // FOR 2 - Preenche lista2 com os valores informados pelo usuário
+        // FOR 2 - Preenche lista2 com os valores informados pelo usuário.
 
         System.out.println("Informe os valores da lista 2:");
 
-        for (int j = 0; j < lista2.length; j++) {
+        for(int j = 0; j < lista2.length; j++) {
 
             lista2[j] = input.nextInt();
         }
 
         input.close();
 
-        /*
-          FOR 3 - Percorre lista1 e verifica, através de uma condicional, se o número na posição k é par.
+        /* FOR 3 - Percorre lista1 e verifica, através de uma condicional, se o número na posição k é par.
+        Se for verdadeiro, somadorParL1 soma à variável o valor armazenado em lista1[k].
+        Se for falso, somadorImparL1 soma à variável o valor armazenado em lista1[k]. */
 
-          Se for verdadeiro, somadorParL1 soma à variável o valor armazenado em lista1[k].
-          
-          Se for falso, somadorImparL1 soma à variável o valor armazenado em lista1[k].
-          
-         */
-
-        for (int k = 0; k < lista1.length; k++) {
+        for(int k = 0; k < lista1.length; k++) {
 
             if (lista1[k] % 2 == 0) {
                 somadorParL1 += lista1[k];
@@ -63,16 +53,11 @@ public class Q02 {
             }
         }
 
-        /*
-          FOR 4 - Percorre lista2 e verifica, através de uma condicional, se o número na posição l é par.
+        /* FOR 4 - Percorre lista2 e verifica, através de uma condicional, se o número na posição l é par.
+        Se for verdadeiro, somadorParL2 soma à variável o valor armazenado em lista2[l].
+        Se for falso, somadorImparL2 soma à variável o valor armazenado em lista2[l]. */
 
-          Se for verdadeiro, somadorParL2 soma à variável o valor armazenado em lista2[l].
-          
-          Se for falso, somadorImparL2 soma à variável o valor armazenado em lista2[l].
-          
-         */
-
-        for (int l = 0; l < lista2.length; l++) {
+        for(int l = 0; l < lista2.length; l++) {
 
             if (lista2[l] % 2 == 0) {
                 somadorParL2 += lista2[l];
